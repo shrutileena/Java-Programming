@@ -1,0 +1,2 @@
+public class alphabetStarPattern {
+}
