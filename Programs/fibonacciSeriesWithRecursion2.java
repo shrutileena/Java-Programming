@@ -21,5 +21,5 @@ public class fibonacciSeriesWithRecursion2 {
         System.out.println("Fibonacci Series: ");
         System.out.print(firstNum + ", " + secondNum);
         printFibonacci(totalNumbers-2);
-    }
+    }   
 }

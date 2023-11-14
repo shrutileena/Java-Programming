@@ -18,7 +18,7 @@ public class alphabetStarPattern {
         System.out.println();
         for(int i=0; i<4; i++){
             System.out.print("* ");
-            for(int j=1; j<3; j++){
+            for(int j=1; j<3    ; j++){
                 System.out.print("  ");
             }
             System.out.print("* ");

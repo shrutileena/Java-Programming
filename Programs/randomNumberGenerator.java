@@ -12,7 +12,6 @@ public class randomNumberGenerator {
         int max = 6;
 
         double result = Math.random() * (max - min + 1) + min;
-
         System.out.println(Math.round(Math.floor(result)));
 
         // Random Class
@@ -30,7 +29,6 @@ public class randomNumberGenerator {
         // int() method
         random.ints(2,1,6).forEach(System.out::println);
         random.ints(2).forEach(System.out::println);
-
 
     }
 }
