@@ -1,7 +1,7 @@
 <html>
 
 <head>
-<title>ToDo Web Application</title>
+<title>Todo Web Application</title>
 </head>
 
 <body>

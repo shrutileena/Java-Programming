@@ -1,5 +1,7 @@
 package com.example.todolist.controller;
 
+import javax.management.RuntimeErrorException;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
@@ -16,6 +18,11 @@ public class LoginController {
 	
 	@Autowired
 	LoginService loginService;
+	
+	@RequestMapping(value = "/")
+	public String showHomePage(ModelMap model) {
+		return "home";
+	}
 	
 	@RequestMapping(value = "/login", method = RequestMethod.GET)
 	public String showLoginPage(ModelMap model) {

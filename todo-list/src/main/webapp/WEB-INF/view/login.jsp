@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>To Do List App</title>
+<title>Todo Web Application</title>
 </head>
 <body>
 	<font color="red">${errorMessage}</font>
