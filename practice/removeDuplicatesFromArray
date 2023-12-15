@@ -35,6 +35,12 @@ class HelloWorld {
     set = list.stream().collect(Collectors.toSet());
     
     System.out.println(set);
-    
+
+    // OR 
+    // Integer[] array = new Integer[]{1,2,5,3,2,8,1};
+    // Set<Integer> set = new HashSet<Integer>();
+    // set.addAll(Arrays.asList(array));
+    // System.out.println(set);
+
     }
 }
