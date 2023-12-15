@@ -1,0 +1,39 @@
+import java.util.*;
+
+class HelloWorld {
+    public static void main(String[] args) {
+        
+       String name = "Shruti Agarwal";
+       
+       System.out.println(name.length());
+       System.out.println(name.charAt(2));
+       System.out.println(name.substring(3,7));
+       System.out.println(name.substring(8));
+       System.out.println(name.concat(" 2.0"));
+       System.out.println(name.indexOf("Aga"));
+       System.out.println(name.lastIndexOf("Agarwal"));
+       System.out.println(name.indexOf("r",3));
+       
+       //.equals()
+       //.equalsIgnoreCase()
+       
+       String name1 = "Shruti Agarwal";
+       StringBuilder name2 = new StringBuilder("Shruti Agarwal ");
+       String name3 = " shruti agarwal ";
+       
+       System.out.println(name.compareTo(name1));
+       System.out.println(name.compareTo(name2.toString()));
+       //.compareToIgnoreCase()
+       
+       System.out.println(name.toLowerCase());
+       System.out.println(name.toUpperCase());
+       System.out.println(name3.trim());
+       System.out.println(name3.replace('r','a'));
+       char[] ch = name.toCharArray();
+       System.out.println(ch);
+       
+       //.contains
+       //.startsWith(string)
+       
+    }
+}
