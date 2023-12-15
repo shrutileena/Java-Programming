@@ -1,0 +1,17 @@
+import java.util.*;
+
+class HelloWorld {
+    public static void main(String[] args) {
+        
+        StringBuffer name = new StringBuffer("Shruti");
+        
+        String name1 = name.toString();
+        
+        StringBuilder name2 = new StringBuilder(name1);
+        
+        System.out.println(name);
+        System.out.println(name1);
+        System.out.println(name2);
+        
+    }
+}
