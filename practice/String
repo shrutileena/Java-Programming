@@ -1,3 +1,5 @@
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
 import java.util.*;
 
 class HelloWorld {
@@ -24,6 +26,10 @@ class HelloWorld {
         
         char nums[] = {'1','2','3'};
         String name7 = new String(nums);
+        
+        // incorrect
+        // int nums2[] = {1,2,3};
+        // String name8 = new String(nums2);
         
         System.out.println(name);
         System.out.println(name1);
