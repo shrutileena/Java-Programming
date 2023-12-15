@@ -1,0 +1,40 @@
+import java.io.*;
+import java.util.*;
+import java.lang.*;
+import java.util.stream.*;
+
+class HelloWorld {
+    public static void main(String[] args) {
+        
+    //   Scanner input = new Scanner(System.in);
+    //   System.out.println("number: ");
+    //   int num = input.nextInt();
+      
+    ArrayList<Integer> list = new ArrayList<Integer>();
+    list.add(1);
+    list.add(2);
+    list.add(3);
+    list.add(1);
+    list.add(2);
+    System.out.println(list);
+    
+    Set<Integer> set = new LinkedHashSet<Integer>();
+    
+    // constructor - ArrayList to Set
+    // Set<Integer> set = new LinkedHashSet<Integer>(list);
+    
+    // .addAll()
+    // set.addAll(list);
+    
+    // .add()
+    // for(Integer num: list){
+    //     set.add(num);
+    // }
+    
+    // stream API
+    set = list.stream().collect(Collectors.toSet());
+    
+    System.out.println(set);
+    
+    }
+}
