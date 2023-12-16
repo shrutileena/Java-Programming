@@ -3,7 +3,7 @@ import java.util.*;
 import java.lang.*;
 import java.util.stream.*;
 
-class HelloWorld {
+class removeDuplicatesFromArray {
     public static void main(String[] args) {
         
     //   Scanner input = new Scanner(System.in);
