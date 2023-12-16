@@ -1,6 +1,6 @@
 import java.util.*;
 
-class HelloWorld {
+class maxNumInArray {
     public static void main(String[] args) {
         
        int[] nums = {1,9,2,3,4};
