@@ -1,6 +1,6 @@
 import java.util.*;
 
-class HelloWorld {
+class stringMethods {
     public static void main(String[] args) {
         
        String name = "Shruti Agarwal";
