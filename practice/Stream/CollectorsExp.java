@@ -1,9 +1,8 @@
 package com.example.Streams;
 
 import java.util.ArrayList;
-import java.util.HashSet;
+import java.util.Comparator;
 import java.util.List;
-import java.util.Set;
 import java.util.stream.Collectors;
 
 public class CollectorsExp {
@@ -85,6 +84,9 @@ public class CollectorsExp {
 		System.out.println(prepareTemperature().stream()
 				.collect(Collectors.groupingBy(CollectorsExp::getName, Collectors.counting())));
 		
+		System.out.println(prepareTemperature().stream()
+				.collect(Collectors.groupingBy(CollectorsExp::getName)));
+		
 		// counting
 		System.out.println(prepareTemperature().stream()
 				.collect(Collectors.counting()));
@@ -100,7 +102,7 @@ public class CollectorsExp {
 		
 		// joining
 		System.out.println(prepareTemperature().stream()
-				.map(x->x.getName()).collect(Collectors.joining()));
+				.map(x->x.getName()).collect(Collectors.joining(" ")));
 		
 		// mapping
 		System.out.println(prepareTemperature().stream()
@@ -121,12 +123,19 @@ public class CollectorsExp {
 				.collect(Collectors.partitioningBy(
 						city->city.getTemperature()>10, Collectors.toList())));
 		
+		System.out.println(prepareTemperature().stream()
+				.collect(Collectors.partitioningBy(
+						city->city.getTemperature()>10, Collectors.toSet())));
+		
 		// averagingDouble
 		System.out.println(prepareTemperature().stream()
 				.collect(Collectors.averagingDouble(CollectorsExp::getTemperature)));
 		
 		System.out.println(prepareTemperature().stream()
 				.collect(Collectors.groupingByConcurrent(x->x.getTemperature()>15)));
+		
+		System.out.println(prepareTemperature().stream().map(x->x.getTemperature())
+				.collect(Collectors.maxBy(Comparator.naturalOrder())));
 		
 	}
 

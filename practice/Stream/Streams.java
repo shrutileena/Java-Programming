@@ -12,8 +12,11 @@ public class Streams {
 		// TODO Auto-generated method stub
 		
 		// create stream
-		Stream<String> sstream;
-		Stream<Integer> istream;
+		// Stream - class
+		// .of - method
+		Stream<String> sstream = Stream.of("2","3","4","5");
+//		Stream<Integer> istream;
+		sstream.forEach(System.out::print);
 		
 		// intermediate operations
 		// map
@@ -24,8 +27,8 @@ public class Streams {
 		numbers.add(4);
 		numbers.add(5);
 		
-		System.out.println(number);
-		System.out.println(numbers);
+//		System.out.println(number);
+//		System.out.println(numbers);
 		
 		List<Integer> squares = numbers.stream().map(x -> x*x).collect(Collectors.toList());
 		System.out.println(squares);
@@ -48,6 +51,9 @@ public class Streams {
 		// reduce
 		Integer evenNumbers = number.stream().filter(x->x%2==0).reduce(0,(ans,i)->ans+i);
 		System.out.println("Sum of even numbers: "+evenNumbers);
+		
+		// limit
+		System.out.println(number.stream().limit(2).collect(Collectors.toList()));
 		
 	}
 

@@ -1,6 +1,7 @@
 package com.example.Streams;
 
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -31,6 +32,10 @@ public class ConvertMaptoList {
 		System.out.println();
 		
 		resultSortedKey.forEach(System.out::print);
+		
+		// .limit()
+		System.out.println();
+		resultSortedKey.stream().limit(2).forEach(System.out::println);
 		
 	}
 
