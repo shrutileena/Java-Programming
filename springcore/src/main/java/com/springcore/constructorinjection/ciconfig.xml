@@ -3,24 +3,26 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xmlns:context="http://www.springframework.org/schema/context"
 	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:c="http://www.springframework.org/schema/c"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans
     http://www.springframework.org/schema/beans/spring-beans.xsd
     http://www.springframework.org/schema/context
     http://www.springframework.org/schema/context/spring-context.xsd">
 
 	<!-- this is our beans -->
-	<bean class="com.springcore.constructorinjection.Person" name="p1">
-		<constructor-arg>
-			<value>Shruti</value>
-		</constructor-arg>
-		<constructor-arg>
-			<value type="int">12</value>
-		</constructor-arg>
+	<!-- <bean class="com.springcore.constructorinjection.Person" name="p1"> 
+		<constructor-arg> <value>Shruti</value> </constructor-arg> <constructor-arg> 
+		<value type="int">12</value> </constructor-arg> </bean> -->
+
+	<!-- c is for constructor arg -->
+	<bean class="com.springcore.constructorinjection.Person" name="p1"
+		c:name="Shruti" c:id="12">
 	</bean>
 
-	<bean class="com.springcore.constructorinjection.Addition" name="a1">
+	<bean class="com.springcore.constructorinjection.Addition"
+		name="a1">
 		<constructor-arg value="12" />
 		<constructor-arg value="11" />
 	</bean>
-	
+
 </beans>

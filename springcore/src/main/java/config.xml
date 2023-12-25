@@ -34,6 +34,7 @@
 	</bean>
 
 	<!-- using p schema -->
+	<!-- p meaning property -->
 	<bean class="com.springcore.springcore.Student" name="student3"
 		p:studentId="22346" p:studentName="Abhay" p:studentAddress="Pune" />
 

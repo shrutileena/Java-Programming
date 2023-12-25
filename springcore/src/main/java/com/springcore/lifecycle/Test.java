@@ -9,12 +9,20 @@ public class Test {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		AbstractApplicationContext context = new ClassPathXmlApplicationContext("com/springcore/lifecycle/lifecycleconfig.xml");
+		context.registerShutdownHook();
+		
 		Samosa s1 = (Samosa) context.getBean("s1");
 		System.out.println(s1);
+
+		System.out.println();
 		
-		context.registerShutdownHook();
+		Pepsi p1 = (Pepsi) context.getBean("p1");
+		System.out.println(p1);
+		
+		Example e1 = (Example) context.getBean("e1");
+		System.out.println(e1);
+		
 		context.close();
-		
 	}
 
 }
