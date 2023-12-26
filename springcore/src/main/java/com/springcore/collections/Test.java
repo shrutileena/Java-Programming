@@ -11,6 +11,11 @@ public class Test {
 		
 		Employee emp1 =  (Employee) context.getBean("employee1");
 		System.out.println(emp1);
+		System.out.println(emp1.getEmployeeName());
+		System.out.println(emp1.getAddresses());
+		System.out.println(emp1.getCourses());
+		System.out.println(emp1.getPhoneNos());
+		System.out.println(emp1.getPhoneNos().getClass().getName());
 	}
 
 }

@@ -8,20 +8,13 @@
     http://www.springframework.org/schema/context
     http://www.springframework.org/schema/context/spring-context.xsd">
 
-<!-- 	<context:annotation-config /> -->
 	<!-- this is our beans -->
-	<bean class="com.springcore.lifecycle.Samosa" name="s1"
-		init-method="init" destroy-method="destroy">
-		<property name="price" value="8" />
-	</bean>
+	<bean class="com.springcore.autowiring.Address" name="address2"
+		p:street="Vasundara" p:city="GZB" />
 	
-	<bean class="com.springcore.lifecycle.Pepsi" name="p1" >
-		<property name="price" value="10" />
-	</bean>
-	
-	<bean class="com.springcore.lifecycle.Example" name="e1">
-		<property name="subject" value="Maths" />
-	</bean>
-
-	<bean class="org.springframework.context.annotation.CommonAnnotationBeanPostProcessor" />
+	<bean class="com.springcore.autowiring.Address" name="address"
+		p:street="Vaishali" p:city="GZB" />
+	<!-- <bean class="com.springcore.autowiring.Employee" name="e1" autowire="byName" /> -->
+	<!-- <bean class="com.springcore.autowiring.Employee" name="e1" autowire="byType" /> -->
+	<bean class="com.springcore.autowiring.Employee" name="e1" autowire="constructor" />
 </beans>
