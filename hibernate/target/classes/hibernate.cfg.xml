@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+	"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+	"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<session-factory>
+		<property name="connection.driver-class">com.mysql.cj.jdbc.Driver</property>
+		<property name="connection.url">jdbc:mysql://localhost:3306/hibernate</property>
+		<property name="connection.username">root</property>
+		<property name="connection.password">Q!w2e3r4</property>
+		<property name="dialect">org.hibernate.dialect.MySQL5Dialect</property>
+		<!-- updates table every time or create table if not exists -->
+		<property name="hbm2ddl.auto">create</property>
+		<!-- creates table everytime we run application -->
+ 		<!-- <property name="hbm2ddl.auto">create</property> -->
+		<property name="show_sql">true</property>
+		<!-- <mapping class="com.hibernate.Student" />
+		<mapping class="com.hibernate.Address" /> -->
+<!-- 		<mapping class="com.hibernate.Certificate"/> -->
+		<mapping class="com.onetoonemapping.Question"/>
+		<mapping class="com.onetoonemapping.Answer"/>
+		<mapping class="com.onetomany.Question"/>
+		<mapping class="com.onetomany.Answer"/>
+	</session-factory>
+</hibernate-configuration>
