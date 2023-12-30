@@ -17,9 +17,11 @@
 		<!-- <mapping class="com.hibernate.Student" />
 		<mapping class="com.hibernate.Address" /> -->
 <!-- 		<mapping class="com.hibernate.Certificate"/> -->
-		<mapping class="com.onetoonemapping.Question"/>
+		<!-- <mapping class="com.onetoonemapping.Question"/>
 		<mapping class="com.onetoonemapping.Answer"/>
 		<mapping class="com.onetomany.Question"/>
-		<mapping class="com.onetomany.Answer"/>
+		<mapping class="com.onetomany.Answer"/> -->
+		<mapping class="com.manytomany.Employee"/>
+		<mapping class="com.manytomany.Project"/>
 	</session-factory>
 </hibernate-configuration>

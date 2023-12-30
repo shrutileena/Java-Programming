@@ -34,7 +34,12 @@ public class App {
 		
 		t.commit();
 		
-		
+		Question firstQ = session.get(Question.class, 1);
+		System.out.println(firstQ.getQuestion());
+		List<Answer> answers = firstQ.getAnswers();
+		for(Answer ans : answers) {
+			System.out.println(ans.getAnswer());
+		}
 		
 		session.close();
 		factory.close();
