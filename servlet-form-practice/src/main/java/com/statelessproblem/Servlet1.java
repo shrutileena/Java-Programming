@@ -18,14 +18,14 @@ public class Servlet1 extends HttpServlet {
 			out.println("<!DOCTYPE html>");
 			out.println("<html>");
 			out.println("<head>");
-			out.println("<title>Servlet Servlet1</title>");
+			out.println("<title>Servlet CookieServlet1</title>");
 			out.println("</head>");
 			out.println("<body>");
 			
 			String name = req.getParameter("name");
 			
 			out.println("<h1>Hello, "+name+" welcome to my website...</h1>");
-			out.println("<a href=\"Servlet2\">Go to servlet 2</a>");
+			out.println("<a href=\"CookieServlet2\">Go to servlet 2</a>");
 			out.println("</body>");
 			out.println("</html>");
 			
