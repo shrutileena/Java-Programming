@@ -5,7 +5,8 @@
 	id="WebApp_ID" version="4.0">
 	<display-name>servlet-form-practice</display-name>
 	<welcome-file-list>
-		<welcome-file>statelessproblem.html</welcome-file>
+		<!-- <welcome-file>urlrewriting.html</welcome-file>
+		<welcome-file>statelessproblem.html</welcome-file> -->
 		<welcome-file>home.html</welcome-file>
 		<welcome-file>index.html</welcome-file>
 		<welcome-file>index.jsp</welcome-file>
@@ -38,7 +39,7 @@
 		<servlet-name>servlet2</servlet-name>
 		<servlet-class>com.statelessproblem.Servlet2</servlet-class>
 	</servlet>
-<servlet>
+	<servlet>
 		<servlet-name>cookieservlet1</servlet-name>
 		<servlet-class>com.cookies.CookieServlet1</servlet-class>
 	</servlet>
@@ -46,6 +47,31 @@
 		<servlet-name>cookieservlet2</servlet-name>
 		<servlet-class>com.cookies.CookieServlet2</servlet-class>
 	</servlet>
+	<servlet>
+		<servlet-name>urlrewritingservlet1</servlet-name>
+		<servlet-class>com.urlrewriting.UrlRewritingServlet1</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>urlrewritingservlet2</servlet-name>
+		<servlet-class>com.urlrewriting.UrlRewritingServlet2</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>hiddenformfieldservlet1</servlet-name>
+		<servlet-class>com.hiddenformfield.HiddenFormFieldServlet1</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>hiddenformfieldservlet2</servlet-name>
+		<servlet-class>com.hiddenformfield.HiddenFormFieldServlet2</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>sessiontrackingservlet1</servlet-name>
+		<servlet-class>com.sessiontracking.SessionTrackingServlet1</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>sessiontrackingservlet2</servlet-name>
+		<servlet-class>com.sessiontracking.SessionTrackingServlet2</servlet-class>
+	</servlet>
+	
 	<servlet-mapping>
 		<servlet-name>register</servlet-name>
 		<url-pattern>/RegisterServlet</url-pattern>
@@ -77,5 +103,29 @@
 	<servlet-mapping>
 		<servlet-name>cookieservlet2</servlet-name>
 		<url-pattern>/CookieServlet2</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>urlrewritingservlet1</servlet-name>
+		<url-pattern>/UrlRewritingServlet1</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>urlrewritingservlet2</servlet-name>
+		<url-pattern>/UrlRewritingServlet2</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>hiddenformfieldservlet1</servlet-name>
+		<url-pattern>/HiddenFormFieldServlet1</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>hiddenformfieldservlet2</servlet-name>
+		<url-pattern>/HiddenFormFieldServlet2</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>sessiontrackingservlet1</servlet-name>
+		<url-pattern>/SessionTrackingServlet1</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>sessiontrackingservlet2</servlet-name>
+		<url-pattern>/SessionTrackingServlet2</url-pattern>
 	</servlet-mapping>
 </web-app>
