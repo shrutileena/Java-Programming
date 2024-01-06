@@ -75,5 +75,8 @@
 
 	<h1><%="Random Number: " + n%></h1>
 
+	<br>
+	
+	<%@include file="jstl.jsp" %>
 </body>
 </html>
