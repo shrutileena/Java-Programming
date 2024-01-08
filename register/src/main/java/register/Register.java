@@ -66,6 +66,8 @@ public class Register extends HttpServlet {
 				OutputStream os = new FileOutputStream(file);
 				os.write(data);
 				os.close();
+				inputStream.close();
+				part.delete();
 				
 				out.println("done");
 			
