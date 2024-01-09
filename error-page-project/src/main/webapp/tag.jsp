@@ -10,5 +10,9 @@
 </head>
 <body>
 	<t:mytag></t:mytag>
+	
+	<t:printtabletag number="20" color="blue"></t:printtabletag>
+	
+	<t:printtabletag color="red" number="468"></t:printtabletag>
 </body>
 </html>

@@ -10,4 +10,17 @@
 		<name>mytag</name>
 		<tag-class>tags.MyTagHandler</tag-class>
 	</tag>
+	
+	<tag>
+		<name>printtabletag</name>
+		<tag-class>tags.PrintTableTag</tag-class>
+		<attribute>
+			<name>number</name>
+			<required>true</required>
+		</attribute>
+		<attribute>
+			<name>color</name>
+			<required>true</required>
+		</attribute>
+	</tag>
 </taglib>
