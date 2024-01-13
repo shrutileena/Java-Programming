@@ -4,23 +4,25 @@
 	"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
 <hibernate-configuration>
 	<session-factory>
-		<property name="connection.driver-class">com.mysql.cj.jdbc.Driver</property>
+		<property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property>
 		<property name="connection.url">jdbc:mysql://localhost:3306/hibernate</property>
 		<property name="connection.username">root</property>
 		<property name="connection.password">Q!w2e3r4</property>
 		<property name="dialect">org.hibernate.dialect.MySQL5Dialect</property>
 		<!-- updates table every time or create table if not exists -->
-		<property name="hbm2ddl.auto">create</property>
+		<property name="hbm2ddl.auto">update</property>
 		<!-- creates table everytime we run application -->
  		<!-- <property name="hbm2ddl.auto">create</property> -->
 		<property name="show_sql">true</property>
-		<!-- <mapping class="com.hibernate.Student" />
-		<mapping class="com.hibernate.Address" /> -->
-<!-- 		<mapping class="com.hibernate.Certificate"/> -->
+		<property name="cache.use_second_level_cache">true</property>
+		<property name="cache.region.factory_class">org.hibernate.cache.ehcache.internal.EhcacheRegionFactory</property>
+		<mapping class="com.hibernate.Student" />
+		<mapping class="com.hibernate.Address" />
+ 		<mapping class="com.hibernate.Certificate"/>
 		<!-- <mapping class="com.onetoonemapping.Question"/>
-		<mapping class="com.onetoonemapping.Answer"/>
+		<mapping class="com.onetoonemapping.Answer"/> -->
 		<mapping class="com.onetomany.Question"/>
-		<mapping class="com.onetomany.Answer"/> -->
+		<mapping class="com.onetomany.Answer"/>
 		<mapping class="com.manytomany.Employee"/>
 		<mapping class="com.manytomany.Project"/>
 	</session-factory>

@@ -23,10 +23,10 @@ public class StateDemo {
 		
 		//transient state
 		Student student = new Student();
-		student.setId(1414);
-		student.setName("Shruti");
-		student.setCity("Delhi");
-		student.setCerti(new Certificate("Java Hibernate", "2 months"));
+		student.setId(106);
+		student.setName("Kavya");
+		student.setCity("Jamshedpur");
+		student.setCerti(new Certificate("Php", "2 months"));
 		
 		Session session = factory.openSession();
 		Transaction t = session.beginTransaction();
@@ -34,7 +34,7 @@ public class StateDemo {
 		// persistent state - session, database
 		session.save(student);
 		
-		student.setName("Abhay");
+		/* student.setName("Abhay"); */
 		
 		t.commit();
 		
