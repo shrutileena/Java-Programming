@@ -25,5 +25,6 @@
 		<mapping class="com.onetomany.Answer"/>
 		<mapping class="com.manytomany.Employee"/>
 		<mapping class="com.manytomany.Project"/>
+		<mapping resource="com/hibernatemapping/person.hbm.xml" />
 	</session-factory>
 </hibernate-configuration>

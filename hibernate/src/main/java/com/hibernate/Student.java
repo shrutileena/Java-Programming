@@ -1,6 +1,7 @@
 package com.hibernate;
 
 import javax.persistence.Cacheable;
+import javax.persistence.Embedded;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
@@ -21,6 +22,7 @@ public class Student {
 	
 	private String city;
 	
+	@Embedded
 	private Certificate certi;
 	
 	public Student() {
