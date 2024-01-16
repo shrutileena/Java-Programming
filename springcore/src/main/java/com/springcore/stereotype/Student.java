@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component;
 
 @Component
 //@Component("ob")
-//@Scope("prototype")
+@Scope("prototype")
 public class Student {
 
 	@Value("Shruti")
