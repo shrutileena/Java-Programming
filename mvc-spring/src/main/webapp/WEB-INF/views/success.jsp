@@ -18,5 +18,7 @@
 <h1>Welcome, ${user.username }</h1>
 <h1>Your email is ${user.email }</h1>
 <h1>Your password is ${user.password }</h1>
+
+<h1>${msg }</h1>
 </body>
 </html>
