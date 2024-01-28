@@ -1,0 +1,9 @@
+
+
+@Controller
+@ResponseBody
+public class AppController{
+
+	
+
+}

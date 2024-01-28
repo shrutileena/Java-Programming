@@ -1,0 +1,15 @@
+
+
+@Configuration
+public class DbConfig {
+	
+	@Bean
+	public DataSource getDataSource(){
+		DataSourcebuilder ds = new DataSourceBuilder();
+		ds.url("jdbc:mysql://localhost:3306/dbname");
+		ds.username("root");
+		ds.password("root");
+		return ds.build();
+	}
+
+}
