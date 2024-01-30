@@ -9,6 +9,8 @@ public class Car extends Vehicle {
 	
 	public static void main(String[] args) {
 		new Car().drive();
+		new Car().xyz();
+		new Car().repair();
 	}
 
 	@Override
@@ -16,4 +18,10 @@ public class Car extends Vehicle {
 		// TODO Auto-generated method stub
 		System.out.println("Car is getting repair");
 	}
+
+	@Override
+	void abc() {
+		System.out.println("abc");
+	}
+	
 }
