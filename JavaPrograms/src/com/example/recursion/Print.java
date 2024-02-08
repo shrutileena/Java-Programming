@@ -3,10 +3,21 @@ package com.example.recursion;
 public class Print {
 
 	public static void main(String[] args) {
-		print123(10);
+		printAsc(10);
+		System.out.println("---------------------");
+		printDesc(10);
 	}
 
-	public static void print123(int n) {
+	private static void printDesc(int i) {
+		
+		if(i==0) return;
+		
+		System.out.println(i);
+		printDesc(i-1);
+		
+	}
+
+	public static void printAsc(int n) {
 
 		// base case
 		if (n == 0)
@@ -14,7 +25,7 @@ public class Print {
 
 		// recursive call
 		// stack building
-		print123(n - 1);
+		printAsc(n - 1);
 
 		System.out.println(n); // printing
 
