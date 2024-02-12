@@ -1,29 +1,31 @@
 package com.example.inheritence;
 
-public class InheritenceExample {
+public class InheritenceExample2 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		AF1 af = new AF1();
+		AF af = new AF();
 		af.a();
 	}
 
 }
 
-class F {
+class F1 {
 	
 	public void a() {
 		System.out.println("a");
 	}
 	
-	public F() {
+	public F1() {
 		System.out.println("f");
 	}
 }
 
-class AF extends F1 {
+class AF1 extends F {
 	
-	public AF() {
+	public AF1() {
+//		this();	// Recursive constructor invocation AF1()
+		super();	// Constructor call must be the first statement in a constructor
 		System.out.println("af");
 	}
 }
