@@ -4,7 +4,7 @@ public class FloatingPointProgram {
 
 	public static void main(String[] args) {
 
-//		float f = 238654289543669999999999999999999999999999.0f; // Erro - The literal
+//		float buffer = 238654289543669999999999999999999999999999.0f; // Erro - The literal
 		// 238654289543669999999999999999999999999999f of type
 		// float is out of range
 

@@ -17,7 +17,7 @@ class F1 {
 	}
 	
 	public F1() {
-		System.out.println("f");
+		System.out.println("buffer");
 	}
 }
 
