@@ -19,7 +19,7 @@ public class GCDemo {
 		
 //		System.gc();
 		Runtime.getRuntime().gc();
-		System.out.println("Main method is done");
+		System.out.println("MainInputStreamReader method is done");
 	}
 	
 	// this method is in Object class
