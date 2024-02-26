@@ -2,7 +2,7 @@ package com.example.variables;
 
 class StaticVariable {
 
-	static int b = 2121;
+	static int b = 2121;	// also called class variable
 
 	public void RadhaRadha() {
 		System.out.println("b - " + b);
@@ -22,7 +22,7 @@ public class StaticVariables {
 		sv.RadhaRadha();
 
 		StaticVariable sv2 = new StaticVariable();
-		sv2.RadhaRadha(); // b value is changed for sv2 object as well prves single copy is created for
+		sv2.RadhaRadha(); // b value is changed for sv2 object as well as a single copy is created for
 							// static variable for multiple objects
 
 	}

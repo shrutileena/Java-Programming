@@ -4,7 +4,7 @@ public class Variables {
 
 	int a = 10;	// instance variable
 	
-	static int b = 1212; // static variable
+	static int b = 1212; // static variable or class variable
 	
 	public void print() {
 		System.out.println("value of a is " + a);

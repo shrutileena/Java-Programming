@@ -15,5 +15,6 @@ public class StaticClass {
 		
 		System.out.println(Agarwal.name);
 		System.out.println(new Agarwal().name);
+		
 	}
 }

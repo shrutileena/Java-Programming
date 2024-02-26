@@ -34,6 +34,8 @@ public class BMW extends Car {
 		
 		b.print();
 		//c.print();	// cannot use private method in other class
+		
+		// signature of overiding methods must be same as parent method
 	}
 
 }

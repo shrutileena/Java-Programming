@@ -23,9 +23,9 @@ public class MemoryManagement {
 //		stringLiteral3 (reference to string object)
 
 //		heap memory
-//		Person Object
+//		Person Object (which has class, instance variable and methods)
 //		String Pool (24)
-//		MemoryManagement Object
+//		MemoryManagement Object (which has class, instance variable and methods)
 //		String object (created using new)
 
 	}
